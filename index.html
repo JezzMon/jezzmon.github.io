@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo">Portfolio</a>
+    <div class="menu-icon1">
+      <i class='bx bx-menu' id="menu-icon"></i>
+    </div>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <i onClick="window.location.reload()" class="bx bx-refresh"></i>
+  </header>
+  
+  <div class="hero">
+    <img src="images/background.jpg" alt="" id="bg-image">
+  </div>
+  
+  <!-- *************************Home Section************************* -->
+  <section class="home full-screen" id="home">
+    <div class="text-content">
+      <h1>Hello, <br> I'm Jesmond</h1>
+      <div class="text-animation">
+        <h2>Frontend Developer</h2>
+      </div>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illum! Libero cupiditate sunt officiis
+        laudantium inventore vero, praesentium iure accusantium asperiores nobis architecto qui maiores, debitis
+        at, eaque vel! Officiis, vel reprehenderit dicta cumque doloremque qui. Autem aperiam cumque aliquid.</p> -->
+      <div class="btn-section">
+        <button onclick="downloadResume()" class="btn">View Resume</button>
+        <div class="social-media">
+          <!-- <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <i class='bx bxl-instagram' style="--vlr:7"></i>
+          </a> -->
+
+          <a href="https://www.facebook.com/jesmond.donato.5/" target="_blank" rel="noopener noreferrer">
+            <i class='bx bxl-facebook' style="--vlr:8"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jesmond-d-971897332/" target="_blank" rel="noopener noreferrer">
+            <i class='bx bxl-linkedin' style="--vlr:9"></i>
+          </a>
+          
+          <a href="https://github.com/JezzMon" target="_blank" rel="noopener noreferrer">
+            <i class='bx bxl-github' style="--vlr:10"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <img src="images/Profile.jpg" alt="profile" class="">
+  </section>
+
+  <!-- *************************About Section************************* -->
+  <section class="about-bg full-screen" id="about">
+    <div class="container about-anim about">
+      <h2 class="title">About <span>Me</span></h2>
+      <img src="images/Profile.jpg" alt="" class="about-img">
+      <div class="text-content2">
+        <h2>Frontend Developer</h2>
+        <p>Hello! I'm am Jesmond, a dedicated student currently pursuing my studies
+          in Information Technology at STI Alaminos. I have a strong interest in web development, UI/UX design, etc. and I'm continuously learning new technologies to improve my skills.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- *************************Projects Section************************* -->
+  <section class="projects-bg full-screen" id="projects">
+    <div class="container projects-anim projects">
+      <h2 class="title">My <span>Projects</span></h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="images/projects/screenshot-1744298592651.png" alt="Project 1">
+          <div class="text-content2">
+            <h2>That's Grouffeetea Web Application</h2>
+            <p>A website made for a certain cafe in Alaminos City, Pangasinan</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="">
+          <div class="text-content2">
+            <h2>Soon...</h2>
+            <!-- <p>Project Two description</p> -->
+          </div>
+        </div>
+        <!-- <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <div class="text-content2">
+            <h2>Project Three</h2>
+            <p>Project Three description</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <div class="text-content2">
+            <h2>Project Four</h2>
+            <p>Project Four desciption.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <div class="text-content2">
+            <h2>Project Five</h2>
+            <p>Project Five description</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <div class="text-content2">
+            <h2>Project Six</h2>
+            <p>Project Six description</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- *************************Skills & Tools Section************************* -->
+  <section class="skills-bg full-screen" id="skills">
+    <div class="container skills-anim skills">
+      <h2 class="title">Skills & <span>Tools</span></h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="images/logo/html-5.png" alt="HTML">
+          <h2>HTML5</h2>
+        </div>
+        <div class="skill-card">
+          <img src="images/logo/css-3.png" alt="CSS">
+          <h2>CSS3</h2>
+        </div>
+        <div class="skill-card">
+          <img src="images/logo/js.png" alt="JavaScript">
+          <h2>JavaScript</h2>
+        </div>
+        <div class="skill-card">
+          <img src="images/logo/java.png" alt="Java">
+          <h2>Java</h2>
+        </div>
+        <div class="skill-card">
+          <img src="images/logo/c-sharp.png" alt="Csharp">
+          <h2>C#</h2>
+        </div>
+        <div class="skill-card">
+          <img src="images/logo/github.png" alt="GitHub">
+          <h2>GitHub</h2>
+        </div>
+        <div class="skill-card">
+          <img src="images/logo/visual.png" alt="GitHub">
+          <h2>Visual Studio</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- *************************Timeline Section************************* -->
+  <section class="timeline-bg full-screen" id="timeline">
+    <div class="timeline container">
+      <div class="timeline-row">
+
+        <div class="timeline-column">
+          <h2 class="title">Education<span class="animate" style="--i:1;"></span></h2>
+
+          <div class="timeline-box">
+            <div class="timeline-content">
+              <div class="content">
+                <div class="year"><i class='bx bxs-calendar'></i>2023 - 2025</div>
+                <h3>Information Technology</h3>
+                <p>From STI Alaminos</p>
+              </div>
+            </div>
+
+            <div class="timeline-content">
+              <div class="content">
+                <div class="year"><i class='bx bxs-calendar'></i>? - ?</div>
+                <h3>Soon...</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate natus consectetur suscipit
+                  aspernatur quos obcaecati dolore veniam debitis omnis.</p> -->
+              </div>
+            </div>
+<!-- 
+            <div class="timeline-content">
+              <div class="content">
+                <div class="year"><i class='bx bxs-calendar'></i>2023 - 2024</div>
+                <h3>Master Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate natus consectetur suscipit
+                  aspernatur quos obcaecati dolore veniam debitis omnis.</p>
+              </div>
+            </div> -->
+
+            <span class="animate" style="--i:2;"></span>
+          </div>
+        </div>
+
+        <div class="timeline-column">
+          <h2 class="title">Experience<span class="animate" style="--i:4;"></span></h2>
+
+          <div class="timeline-box">
+            <div class="timeline-content">
+              <div class="content">
+                <div class="year"><i class='bx bxs-calendar'></i>? - ?</div>
+                <h3>Soon...</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate natus consectetur suscipit
+                  aspernatur quos obcaecati dolore veniam debitis omnis.</p> -->
+              </div>
+            </div>
+
+            <!-- <div class="timeline-content">
+              <div class="content">
+                <div class="year"><i class='bx bxs-calendar'></i>2022 - 2023</div>
+                <h3>Backend Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate natus consectetur suscipit
+                  aspernatur quos obcaecati dolore veniam debitis omnis.</p>
+              </div>
+            </div>
+
+            <div class="timeline-content">
+              <div class="content">
+                <div class="year"><i class='bx bxs-calendar'></i>2023 - 2024</div>
+                <h3>Full Stack Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate natus consectetur suscipit
+                  aspernatur quos obcaecati dolore veniam debitis omnis.</p>
+              </div>
+            </div> -->
+
+            <span class="animate" style="--i:5;"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- *************************Blogspot Section************************* -->
+  <section class="blog-bg full-screen" id="blog">
+    <div class="container blog-anim blog">
+      <h2 class="title">My <span>Blog</span></h2>
+      <article class="blog-post">
+        <h2>Soon...</h2>
+        <p></p>
+        <a href="#">Read More</a>
+      </article>
+      <!-- <article class="blog-post">
+        <h2>My Experience with ASP.NET MVC</h2>
+        <p>A short summary of what I've learned working with ASP.NET MVC...</p>
+        <a href="#">Read More</a>
+      </article> -->
+    </div>
+  </section>
+
+  <!-- *************************Contact Section************************* -->
+  <!-- <section class="contact-bg full-screen" id="contact">
+    <div class="container contact-anim contact">
+      <h2 class="title">Contact <span>Me</span></h2>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5a40c62f-2001-4513-8c90-ce3930203b5c">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message <i class='bx bx-send'></i></button>
+      </form>
+    </div>
+  </section> -->
+
+
+  <section class="contact-bg full-screen" id="contact">
+    <div class="container">
+      <h2 class="title">Contact <span>Me</span></h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <input type="hidden" name="access_key" value="54a8e8a4-c3fa-4839-b5d7-aa52ee8bd974">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit" class="contact-button">Send Message <i class="bx bx-send"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 
+  <div class="container">
+    <h1>Hello</h1>
+  </div>
+
+  <div class="flex-container">
+    <input type="text" placeholder="Enter your name">
+    <input type="text" placeholder="Enter your email">
+    <button type="submit">Submit</button>
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
