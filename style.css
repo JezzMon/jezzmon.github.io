@@ -37,7 +37,13 @@ html {
     /* font-size: 62.5%; */
     overflow-x: hidden;
     scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+html::-webkit-scrollbar {
+    display: none;
+  }
 
 .logo {
     font-size: 2.9rem;
@@ -79,8 +85,9 @@ html {
     }
 }
 
-
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 
@@ -228,7 +235,7 @@ img {
         padding: 1.25rem 4%
     }
 
-    .header i{
+    .header i {
         display: none;
     }
 }
@@ -498,10 +505,12 @@ img {
 }
 
 @keyframes Slide {
-    0%{
-        transform: translateX(-100px); ;
+    0% {
+        transform: translateX(-100px);
+        ;
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
@@ -519,7 +528,7 @@ img {
     background: var(--gradient-accent);
     z-index: -1;
     transition: .5s ease;
-} 
+}
 
 
 .btn:hover::before {
@@ -584,7 +593,7 @@ i:hover::after {
     background: rgba(255, 255, 255, .1);
     border: .2rem solid rgba(255, 255, 255, .3);
     border-radius: 50%;
-    filter: drop-shadow(0 0 8rem var(--accent-2)); 
+    filter: drop-shadow(0 0 8rem var(--accent-2));
     animation: Scale 1s ease forwards;
     scale: 0;
     animation-delay: 2s;
@@ -646,7 +655,7 @@ i:hover::after {
         width: 40vw;
     }
 
-    .text-content{
+    .text-content {
         margin-top: 14vh;
     }
 
@@ -754,6 +763,7 @@ i:hover::after {
 
 .title span {
     color: var(--title-span);
+    mix-blend-mode: color-dodge;
 }
 
 .about-img {
@@ -1187,21 +1197,21 @@ i:hover::after {
 }
 
 
-.contact-container{
-    display:flex;
+.contact-container {
+    display: flex;
     justify-content: space-evenly;
     height: 100vh;
     align-items: center;
 }
 
-.contact-left{
+.contact-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.contact-inputs{
+.contact-inputs {
     width: 50vw;
     height: 50px;
     border: none;
@@ -1212,17 +1222,17 @@ i:hover::after {
     padding-left: 12px;
 }
 
-.contact-left textarea{
+.contact-left textarea {
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
 }
 
-.contact-inputs:focus{
+.contact-inputs:focus {
     border: 2px solid var(--accent-1);
 }
 
-.contact-inputs::placeholder{
+.contact-inputs::placeholder {
     color: #a9a9a9;
 }
 
