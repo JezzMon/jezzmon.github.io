@@ -184,6 +184,7 @@ img {
 .header:hover::after {
     left: 97%;
     width: 0%;
+    opacity: 0;
 }
 
 .logo {
